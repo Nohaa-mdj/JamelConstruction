@@ -1,0 +1,217 @@
+body {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  color: #4a4a4a;
+  background-color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #eaeaea;
+}
+
+header .logo {
+  font-size: 36px;
+  color: #b3392f;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-size: 16px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul li:hover {
+  color: #b3392f;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: url("images/rénovation.jpg") no-repeat center/cover;
+  height: 700px;
+  align-items: center;
+  position: relative;
+  /*padding: 0 5%;*/
+}
+
+.hero .overlay {
+  background: url("rénovation.jpg") no-repeat center/cover;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 100px;
+  width: 80%;
+  /*max-width: 90%; /* Ajustement pour occuper presque toute la largeur */
+  border-radius: 10px; /* Garder l'arrondi si tu le souhaites */
+  backdrop-filter: brightness(
+    0.5
+  ); /* Assombrir légèrement l'image pour améliorer la lisibilité du texte */
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+.services,
+.engagements,
+.clients,
+.projets {
+  /* padding: 100px 200px;*/
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.service-container,
+.engagement-container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.service-container {
+  display: grid; /* Utilisation de Grid pour une mise en page propre */
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
+  gap: 50px; /* Espacement entre les cartes */
+  margin-top: 40px;
+}
+
+.services h2 {
+  font-size: 3.2em;
+  font-weight: 400;
+}
+
+.services p {
+  font-size: 1.6em;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+.service-card,
+.engagement-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden; /* Empêche les images de dépasser les bordures arrondies */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.service-card:hover,
+.engagement-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  position: relative; /* Pour ajouter la ligne décorative */
+  font-weight: 200;
+}
+
+.service-card h3::after {
+  content: ""; /* Ajoute la ligne décorative */
+  display: block;
+  width: 50px; /* Largeur de la ligne */
+  height: 2px; /* Épaisseur de la ligne */
+  background-color: #f39c12; /* Couleur de la ligne (personnalisable) */
+  margin: 8px auto 0; /* Centrage et espacement */
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+.engagement-card h3 {
+  color: #b3392f;
+}
+
+.clients .testimonial {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto;
+  font-style: italic;
+  color: #4a4a4a;
+}
+
+.projets button {
+  background-color: #b3392f;
+  color: #ffffff;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.projets button:hover {
+  background-color: #8c2a25;
+}
+
+footer {
+  background: #2f2f2f;
+  color: #ffffff;
+  padding: 60px 200px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footer-container div {
+  max-width: 280px;
+}
+
+.footer-container h3 {
+  color: #fbb03b;
+  margin-bottom: 10px;
+}
