@@ -172,17 +172,11 @@ nav ul li:hover {
   transform: scale(1.03); /* Légère mise en avant au survol */
 }
 
-/*.engagement-card h3 {
-  color: #b3392f;
-}*/
-
-/*.engagements {
-  margin-top: 7%;
-}*/
-
 .engagements {
+  display: flex;
   background-color: #f8f8f8;
-  padding: 80px 10%;
+  /*padding: 80px 10%;*/
+  padding: 7% 3%;
   text-align: left;
 }
 
@@ -202,7 +196,7 @@ nav ul li:hover {
 .engagement-header h2 {
   font-size: 2.8rem;
   color: #4a4a4a;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 10px;
 }
 
@@ -217,8 +211,11 @@ nav ul li:hover {
 
 .engagement-header p {
   color: #4a4a4a;
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 100;
+  text-align: left;
+  width: 80%;
 }
 
 .engagement-container {
@@ -226,12 +223,15 @@ nav ul li:hover {
   gap: 50px;
   justify-content: space-between;
   text-align: left;
+  align-items: stretch;
 }
 
 .engagement-card {
   background: none;
   text-align: center;
   flex: 1;
+  height: 100%;
+  align-items: stretch;
 }
 
 .engagement-card img {
@@ -241,7 +241,7 @@ nav ul li:hover {
 
 .engagement-card h3 {
   color: #f39c12;
-  font-weight: 600;
+  font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -249,6 +249,8 @@ nav ul li:hover {
 .engagement-card ul {
   list-style-type: none;
   padding: 0;
+  font-weight: lighter;
+  text-align: left;
 }
 
 .engagement-card ul li {
@@ -259,11 +261,22 @@ nav ul li:hover {
   padding-left: 20px;
 }
 
+.engagement-card ul {
+  flex-grow: 1; /* Force les listes à occuper l'espace restant pour équilibrer les hauteurs */
+}
+
 .engagement-card ul li::before {
   content: "•";
   color: #4a4a4a;
   position: absolute;
   left: 0;
+}
+
+.separator {
+  width: 50px;
+  height: 2px;
+  background-color: #f39c12;
+  margin-top: 10px;
 }
 
 .clients .testimonial {
