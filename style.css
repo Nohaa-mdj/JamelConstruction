@@ -89,8 +89,8 @@ nav ul li:hover {
   background-color: #fafafa;
 }
 
-.service-container,
-.engagement-container {
+.service-container
+/*.engagement-container*/ {
   display: flex;
   gap: 50px;
   justify-content: center;
@@ -124,7 +124,7 @@ nav ul li:hover {
 }
 
 /*.service-card,*/
-.engagement-card {
+/*.engagement-card {
   background: #ffffff;
   padding: 15px;
   border-radius: 15px;
@@ -132,7 +132,7 @@ nav ul li:hover {
   width: 420px;
   text-align: center;
   transition: transform 0.3s;
-}
+}*/
 
 .service-card {
   position: relative;
@@ -172,12 +172,98 @@ nav ul li:hover {
   transform: scale(1.03); /* Légère mise en avant au survol */
 }
 
-.engagement-card h3 {
+/*.engagement-card h3 {
   color: #b3392f;
-}
+}*/
+
+/*.engagements {
+  margin-top: 7%;
+}*/
 
 .engagements {
-  margin-top: 7%;
+  background-color: #f8f8f8;
+  padding: 80px 10%;
+  text-align: left;
+}
+
+.engagement-header {
+  text-align: left;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.engagement-header h4 {
+  text-transform: uppercase;
+  color: #d1d1d1;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.engagement-header h2 {
+  font-size: 2.8rem;
+  color: #4a4a4a;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.engagement-header h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #f39c12;
+  margin-top: 10px;
+}
+
+.engagement-header p {
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.engagement-container {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.engagement-card {
+  background: none;
+  text-align: center;
+  flex: 1;
+}
+
+.engagement-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.engagement-card h3 {
+  color: #f39c12;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.engagement-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.engagement-card ul li {
+  color: #4a4a4a;
+  font-size: 1rem;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 20px;
+}
+
+.engagement-card ul li::before {
+  content: "•";
+  color: #4a4a4a;
+  position: absolute;
+  left: 0;
 }
 
 .clients .testimonial {
