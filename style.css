@@ -86,7 +86,8 @@ nav ul li:hover {
   align-items: center;
   width: 100%;
   text-align: center;
-  background-color: #fafafa;
+  background-color: #ffffff;
+  margin-bottom: 6%;
 }
 
 .service-container
@@ -279,8 +280,43 @@ nav ul li:hover {
   margin-top: 10px;
 }
 
+.clients {
+  background-color: #ffffff;
+}
+
+.clients-background {
+  background: url("clients.jpg") no-repeat center/cover;
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajuste la hauteur pour correspondre au modèle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.clients h2 {
+  font-family: "Display", serif;
+  font-size: xxx-large;
+  font-weight: 100;
+  margin-top: 8%;
+  margin-bottom: 0;
+}
+
+.separatore {
+  width: 40px; /* Longueur de la barre */
+  height: 1px; /* Épaisseur de la barre */
+  background-color: #f39c12; /* Couleur dorée */
+  margin: 10px auto;
+}
+
+.clients p {
+  font-weight: 100;
+  margin-top: 2%;
+}
+
 .clients .testimonial {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.6);
   padding: 50px;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
