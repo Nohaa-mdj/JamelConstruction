@@ -326,6 +326,10 @@ nav ul li:hover {
   color: #4a4a4a;
 }
 
+.projets {
+  margin-bottom: 6%;
+}
+
 .projets button {
   background-color: #b3392f;
   color: #ffffff;
