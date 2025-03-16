@@ -1,5 +1,5 @@
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "Fair Display", serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -35,7 +35,7 @@ nav ul {
 }
 
 nav ul li:hover {
-  color: #b3392f;
+  color: #f39c12b3;
 }
 
 .hero {
@@ -98,8 +98,9 @@ nav ul li:hover {
 .service-container {
   display: grid; /* Utilisation de Grid pour une mise en page propre */
   grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
-  gap: 50px; /* Espacement entre les cartes */
+  gap: 13%%; /* Espacement entre les cartes */
   margin-top: 40px;
+  width: 85%;
 }
 
 .services h2 {
@@ -113,7 +114,7 @@ nav ul li:hover {
   margin-top: 20px;
 }
 
-.service-card,
+/*.service-card,*/
 .engagement-card {
   background: #ffffff;
   padding: 15px;
@@ -125,48 +126,53 @@ nav ul li:hover {
 }
 
 .service-card {
+  position: relative;
   background: #ffffff;
-  border-radius: 15px;
-  overflow: hidden; /* Empêche les images de dépasser les bordures arrondies */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  padding: 0; /* Retirer les marges internes */
+  box-shadow: none; /* Suppression de l'effet d'ombre */
+  overflow: hidden; /* Évite que les images dépassent */
   cursor: pointer;
-}
-
-.service-card:hover,
-.engagement-card:hover {
-  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 .service-card img {
   width: 100%;
-  height: 80%;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
+  height: auto; /* Conserve les proportions de l'image */
+  object-fit: cover; /* Remplissage homogène de l'espace */
 }
 
 .service-card h3 {
-  font-size: 20px;
-  margin-top: 15px;
-  position: relative; /* Pour ajouter la ligne décorative */
-  font-weight: 200;
+  font-size: 18px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-weight: 300; /* Texte légèrement plus épais */
+  position: relative;
 }
 
 .service-card h3::after {
-  content: ""; /* Ajoute la ligne décorative */
+  content: "";
   display: block;
-  width: 50px; /* Largeur de la ligne */
-  height: 2px; /* Épaisseur de la ligne */
-  background-color: #f39c12; /* Couleur de la ligne (personnalisable) */
-  margin: 8px auto 0; /* Centrage et espacement */
+  width: 50px; /* Longueur de la ligne décorative */
+  height: 1px;
+  background-color: #f39c12; /* Couleur dorée */
+  margin: 10px auto 0; /* Centrage parfait de la ligne */
 }
 
 .service-card:hover {
-  transform: scale(1.05); /* Effet d'agrandissement au survol */
+  transform: scale(1.03); /* Légère mise en avant au survol */
 }
 
 .engagement-card h3 {
   color: #b3392f;
+}
+
+.service-container {
+  gap: 13%;
+}
+
+.engagements {
+  margin-top: 7%;
 }
 
 .clients .testimonial {
@@ -198,7 +204,7 @@ nav ul li:hover {
 footer {
   background: #2f2f2f;
   color: #ffffff;
-  padding: 60px 200px;
+  padding: 60px 8%;
 }
 
 .footer-container {
