@@ -18,10 +18,9 @@ header {
   border-bottom: 2px solid #eaeaea;
 }
 
-header .logo {
-  font-size: 36px;
-  color: #b3392f;
-  font-weight: bold;
+.logo img {
+  width: 150px;
+  height: auto;
 }
 
 nav ul {
@@ -54,9 +53,8 @@ nav ul li:hover {
   /*text-align: center;*/
   padding: 80px 100px;
   width: 100%;
-  backdrop-filter: brightness(
-    0.5
-  ); /* Assombrir légèrement l'image pour améliorer la lisibilité du texte */
+  backdrop-filter: brightness(0.5);
+  margin-bottom: 3%;
 }
 
 .hero h1 {
@@ -124,17 +122,6 @@ nav ul li:hover {
   font-weight: 200;
 }
 
-/*.service-card,*/
-/*.engagement-card {
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  width: 420px;
-  text-align: center;
-  transition: transform 0.3s;
-}*/
-
 .service-card {
   position: relative;
   background: #ffffff;
@@ -147,7 +134,7 @@ nav ul li:hover {
 
 .service-card img {
   width: 100%;
-  height: auto; /* Conserve les proportions de l'image */
+  height: 261px; /* Conserve les proportions de l'image */
   object-fit: cover; /* Remplissage homogène de l'espace */
 }
 
@@ -293,13 +280,14 @@ nav ul li:hover {
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 6%;
 }
 
 .clients h2 {
   font-family: "Display", serif;
   font-size: xxx-large;
   font-weight: 100;
-  margin-top: 8%;
+  margin-top: 6%;
   margin-bottom: 0;
 }
 
@@ -311,7 +299,7 @@ nav ul li:hover {
 }
 
 .clients p {
-  font-weight: 100;
+  font-weight: 300;
   margin-top: 2%;
 }
 
@@ -339,6 +327,7 @@ nav ul li:hover {
   cursor: pointer;
   font-size: 16px;
   transition: background 0.3s;
+  margin-top: 1%;
 }
 
 .projets button:hover {
@@ -358,7 +347,8 @@ footer {
 }
 
 .footer-container div {
-  max-width: 280px;
+  /*max-width: 280px;*/
+  width: 100%;
 }
 
 .footer-container h3 {
